@@ -8,7 +8,8 @@ namespace Zoolandia.Species
         }
         public string Action()
         {
-            return "eat honey and growl.";
+            return "play in traffic.";
         }
     }
 }
+

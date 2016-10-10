@@ -8,7 +8,7 @@ namespace Zoolandia.Species
         }
         public string Action()
         {
-            return "play in traffic.";
+            return "play with his good friend the hound in Disney movies.";
         }
     }
 }
