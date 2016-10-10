@@ -1,43 +1,41 @@
 using System;
-using Zoolandia.Species;
+using Zoolandia.Animals;
+using System.Collections.Generic;
 
 namespace Zoolandia
-{
-    public class Program
+{ 
+  class Zoolandia
+  {
+    static void Main(string[] args)
     {
-        public static void Main(string[] args)
-        {
 
-            OdocoileusVirginianus WhiteTailedDeer = new OdocoileusVirginianus("White Tailed Deer");
-            WhiteTailedDeer.Name = "White Tailed Deer";
-            Console.WriteLine(WhiteTailedDeer.Name + " likes to " + WhiteTailedDeer.Action());
-            Console.WriteLine(WhiteTailedDeer.Welcome());
+      // Create some animals
+      Odocoileus manny = new Odocoileus();
+      manny.name = "Manny";
+      manny.species = new OdocoileusHermionus();
 
-            OdocoileusHermionus MuleDeer = new OdocoileusHermionus("Mule Deer");
-            MuleDeer.Name = "Mule Deer";
-            Console.WriteLine(MuleDeer.Name + " likes to " + MuleDeer.Action());
-            Console.WriteLine(MuleDeer.Welcome());
+      Odocoileus danny = new Odocoileus();
+      danny.name = "Danny";
+      danny.species = new OdocoileusVirginianus();
 
-            VulpesVulpes RedFox = new VulpesVulpes("Red Fox");
-            RedFox.Name = "Red Fox";
-            Console.WriteLine(RedFox.Name + " likes to " + RedFox.Action());
-            Console.WriteLine(RedFox.Welcome());
+      Vulpes jerry = new Vulpes();
+      jerry.name = "jerry";
+      jerry.species = new VulpesMacrotis();
 
-            VulpesMacrotis KitFox = new VulpesMacrotis("Kit Fox");
-            KitFox.Name = "Kit Fox";
-            Console.WriteLine(KitFox.Name + " likes to " + KitFox.Action());
-            Console.WriteLine(KitFox.Welcome());
+      Vulpes larry = new Vulpes();
+      larry.name = "larry";
+      larry.species = new VulpesVulpes();
 
-            UrsusAmericanus AmericanBlackBear = new UrsusAmericanus("American Black Bear");
-            AmericanBlackBear.Name = "American Black Bear";
-            Console.WriteLine(AmericanBlackBear.Name + " likes to " + AmericanBlackBear.Action());
-            Console.WriteLine(AmericanBlackBear.Welcome());
+      Ursus harry = new Ursus();
+      harry.name = "harry";
+      harry.species = new UrsusAmericanus();
 
-            UrsusArctos BrownBear = new UrsusArctos("Brown Bear");
-            BrownBear.Name = "Brown Bear";
-            Console.WriteLine (BrownBear.Name + " likes to " + BrownBear.Action());
-            Console.WriteLine (BrownBear.Welcome());
+      Ursus carrie = new Ursus();
+      carrie.name = "carrie";
+      carrie.species = new UrsusArctos();
 
-        }
+      // Output the habitats in our Zoo
+      Console.WriteLine()
     }
+  }
 }
